@@ -36,7 +36,9 @@ export class JiraService {
     private readonly auth: string;
 
     constructor(domain: string, email: string, apiToken: string) {
-        this.baseUrl = `https://${domain}.atlassian.net/rest/api/3`;
+        // Handle both formats: domain with or without .atlassian.net suffix
+        const baseDomain = domain.endsWith('.atlassian.net') ? domain : `${domain}.atlassian.net`;
+        this.baseUrl = `https://${baseDomain}/rest/api/3`;
         this.auth = Buffer.from(`${email}:${apiToken}`).toString('base64');
     }
 
