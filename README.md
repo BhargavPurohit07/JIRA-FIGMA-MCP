@@ -16,14 +16,6 @@ Give [Cursor](https://cursor.sh/), [Windsurf](https://codeium.com/windsurf), [Cl
 
 When Cursor has access to Figma design data and Jira tickets, it's **way** better at one-shotting designs accurately and implementing features based on specifications.
 
-<h3><a href="https://www.framelink.ai/docs/quickstart?utm_source=github&utm_medium=readme&utm_campaign=readme">See quickstart instructions →</a></h3>
-
-## Demo
-
-[Watch a demo of building a UI in Cursor with Figma design data](https://youtu.be/6G9yb-LrEqg)
-
-[![Watch the video](https://img.youtube.com/vi/6G9yb-LrEqg/maxresdefault.jpg)](https://youtu.be/6G9yb-LrEqg)
-
 ## How it works
 
 1. Open your IDE's chat (e.g. agent mode in Cursor).
