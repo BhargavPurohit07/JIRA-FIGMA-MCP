@@ -127,11 +127,29 @@ export class JiraService {
             )
         );
 
-        return {
+        // Extract text content from description if it exists
+        let descriptionText = '';
+        if (response.fields.description && response.fields.description.content) {
+            const traverse = (content: any[]): string => {
+                if (!content || !Array.isArray(content)) return '';
+                return content.map(node => {
+                    if (node.type === 'text') {
+                        return node.text || '';
+                    }
+                    if (node.content) {
+                        return traverse(node.content);
+                    }
+                    return '';
+                }).join(' ');
+            };
+            descriptionText = traverse(response.fields.description.content);
+        }
+
+        const issueData = {
             id: response.id,
             key: response.key,
             summary: response.fields.summary,
-            description: response.fields.description ? JSON.stringify(response.fields.description) : '',
+            description: descriptionText,
             status: response.fields.status?.name || '',
             priority: response.fields.priority?.name || '',
             assignee: response.fields.assignee ? {
@@ -152,6 +170,11 @@ export class JiraService {
             issueType: response.fields.issuetype?.name || '',
             url: `https://${this.baseUrl.split('/')[2].split('.')[0]}.atlassian.net/browse/${response.key}`
         };
+
+        // Log the response data
+        Logger.log('Jira Issue Response:', JSON.stringify(issueData, null, 2));
+
+        return issueData;
     }
 
     async searchIssues(jql: string, maxResults: number = 50): Promise<JiraIssue[]> {
