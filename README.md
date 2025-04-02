@@ -30,32 +30,6 @@ The `figma-developer-mcp` server can be configured by adding the following to yo
 >
 > To use the Jira functionality, you will also need to create a Jira API token. Instructions on how to create a Jira API token can be found [here](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/).
 
-### MacOS / Linux
-
-```json
-{
-  "mcpServers": {
-    "Framelink Figma & Jira MCP": {
-      "command": "npx",
-      "args": ["-y", "figma-developer-mcp", "--figma-api-key=YOUR-FIGMA-KEY", "--jira-domain=YOUR-JIRA-DOMAIN", "--jira-email=YOUR-JIRA-EMAIL", "--jira-api-token=YOUR-JIRA-TOKEN", "--stdio"]
-    }
-  }
-}
-```
-
-### Windows
-
-```json
-{
-  "mcpServers": {
-    "Framelink Figma & Jira MCP": {
-      "command": "cmd",
-      "args": ["/c", "npx", "-y", "figma-developer-mcp", "--figma-api-key=YOUR-FIGMA-KEY", "--jira-domain=YOUR-JIRA-DOMAIN", "--jira-email=YOUR-JIRA-EMAIL", "--jira-api-token=YOUR-JIRA-TOKEN", "--stdio"]
-    }
-  }
-}
-```
-
 ### Environment Variables
 
 You can also configure the server using environment variables:
