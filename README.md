@@ -8,19 +8,6 @@
 <div align="center">
   <h1>Framelink Figma & Jira MCP Server</h1>
   <h3>Give your coding agent access to your Figma and Jira data.<br/>Implement designs in any framework in one-shot.</h3>
-  <a href="https://npmcharts.com/compare/figma-developer-mcp?interval=30">
-    <img alt="weekly downloads" src="https://img.shields.io/npm/dm/figma-developer-mcp.svg">
-  </a>
-  <a href="https://github.com/GLips/Figma-Context-MCP/blob/main/LICENSE">
-    <img alt="MIT License" src="https://img.shields.io/github/license/GLips/Figma-Context-MCP" />
-  </a>
-  <a href="https://framelink.ai/discord">
-    <img alt="Discord" src="https://img.shields.io/discord/1352337336913887343?color=7389D8&label&logo=discord&logoColor=ffffff" />
-  </a>
-  <br />
-  <a href="https://twitter.com/glipsman">
-    <img alt="Twitter" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2Fglipsman&label=%40glipsman" />
-  </a>
 </div>
 
 <br/>
