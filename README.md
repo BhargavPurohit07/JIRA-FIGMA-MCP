@@ -1,12 +1,5 @@
-<a href="https://www.framelink.ai/?utm_source=github&utm_medium=readme&utm_campaign=readme" target="_blank" rel="noopener">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://www.framelink.ai/github/HeaderDark.png" />
-    <img alt="Framelink" src="https://www.framelink.ai/github/HeaderLight.png" />
-  </picture>
-</a>
-
 <div align="center">
-  <h1>Framelink Figma & Jira MCP Server</h1>
+  <h1>Figma & Jira MCP Server</h1>
   <h3>Give your coding agent access to your Figma and Jira data.<br/>Implement designs in any framework in one-shot.</h3>
 </div>
 
